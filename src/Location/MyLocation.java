@@ -8,7 +8,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 
-public class MyLocation {//NOTE: This code is not mine and pulled directly from Stackoverflow
+public class MyLocation {
     Timer timer1;
     LocationManager lm;
     LocationResult locationResult;

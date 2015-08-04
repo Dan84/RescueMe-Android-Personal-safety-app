@@ -21,14 +21,13 @@ public class RescueApp extends Application{
 	 public void onCreate() {
 	        super.onCreate();
 	 
-	        // Add your initialization code here
-	        Parse.initialize(this, "hneTqndBjMOQIpiS0I7W265Ndn7l4QoaoKsrI5H1", "46DHm7sHebQ6BjAsiLOPFnsYQqdBBjy0AFUfZefZ");
+	        
+	        Parse.initialize(this, "ApplicationID", "ClientKey");
 	 
 	        ParseUser.enableAutomaticUser();
 	        ParseACL defaultACL = new ParseACL();
 	 
-	        // If you would like all objects to be private by default, remove this
-	        // line.
+	        
 	        defaultACL.setPublicReadAccess(true);
 	 
 	        ParseACL.setDefaultACL(defaultACL, true);
